@@ -124,7 +124,7 @@ margin-bottom: -80px;
      }
 
      div {
-         background-image: url(./down-carat@2x.png);
+         background-image: url(/down-carat@2x.png);
          width: 50px;
          height: 15px;
          margin: 0 auto;
