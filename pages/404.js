@@ -1,14 +1,19 @@
-import React from "react"
+"use strict";
 
-import Layout from "../components/layout"
-import SEO from "../components/seo"
+var _interopRequireDefault = require("@babel/runtime/helpers/interopRequireDefault");
 
-const NotFoundPage = () => (
-  <Layout>
-    <SEO title="404: Not found" />
-    <h1>NOT FOUND</h1>
-    <p>You just hit a route that doesn&#39;t exist... the sadness.</p>
-  </Layout>
-)
+exports.__esModule = true;
+exports.default = void 0;
 
-export default NotFoundPage
+var _react = _interopRequireDefault(require("react"));
+
+var _core = require("@chakra-ui/core");
+
+var _layout = _interopRequireDefault(require("../components/layout"));
+
+var _default = () => /*#__PURE__*/_react.default.createElement(_layout.default, null, /*#__PURE__*/_react.default.createElement(_core.Box, null, /*#__PURE__*/_react.default.createElement(_core.Heading, {
+  as: "h1",
+  size: "xl"
+}, "Oops, that's a 404")));
+
+exports.default = _default;

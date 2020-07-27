@@ -1,35 +1,35 @@
-import React from "react"
-import PropTypes from "prop-types"
-import { Link } from "gatsby"
+"use strict";
 
-import FilledHelmet from './FilledHelmet'
+var _interopRequireDefault = require("@babel/runtime/helpers/interopRequireDefault");
 
-import Header from "./Header"
-import Footer from "./Footer"
+exports.__esModule = true;
+exports.default = void 0;
 
-import "./layout.css"
+var _react = _interopRequireDefault(require("react"));
 
-const Layout = ({ children, img, url, excerpt }) => {
-  
-  return (
-    <>
-    <FilledHelmet
-      title="Wisconsin Alumni Association"
-      img={img}
-      url={url}
-      desc={excerpt} 
-      />
-      <Header />
-      <div>
-        <main>{children}</main>
-        <Footer />
-      </div>
-    </>
-  )
-}
+var _core = require("@chakra-ui/core");
 
-Layout.propTypes = {
-  children: PropTypes.node.isRequired,
-}
+var _header = _interopRequireDefault(require("./header"));
 
-export default Layout
+var _menu = _interopRequireDefault(require("./menu"));
+
+require("../assets/style.css");
+
+const Layout = ({
+  children
+}) => /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement(_core.Grid, {
+  style: {
+    margin: `0 auto`
+  },
+  maxW: "90%",
+  w: 900,
+  alignSelf: "center"
+}, /*#__PURE__*/_react.default.createElement(_core.Box, {
+  mb: 10,
+  mt: 20
+}, /*#__PURE__*/_react.default.createElement(_header.default, null)), /*#__PURE__*/_react.default.createElement(_menu.default, null), /*#__PURE__*/_react.default.createElement(_core.Box, {
+  mb: 100
+}, children)));
+
+var _default = Layout;
+exports.default = _default;
